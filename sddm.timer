@@ -1,0 +1,9 @@
+[Unit]
+Description=Start sddm service fixed time after boot
+
+[Timer]
+OnStartupSec=20
+Unit=sddm.service
+
+[Install]
+WantedBy=multi-user.target
